@@ -17,7 +17,7 @@ import { createClient } from '@supabase/supabase-js';
 
 
 export default function MediaControlCard() {
-  
+
   const theme = useTheme();
   const [podcasts, setPodcasts] = useState([]); // State to store the fetched podcasts
   const [favoritePodcastIds, setFavoritePodcastIds] = useState([]); // State to store favorite podcast IDs
@@ -52,11 +52,11 @@ export default function MediaControlCard() {
     const toggleFavorite = async (podcast) => {
       const podcastId = podcast.id;
       const podcastName = podcast.title;
-  
+
       if (favoritePodcastIds.includes(podcastId)) {
         // If the podcast is already in favorites, remove it
         setFavoritePodcastIds((prevIds) => prevIds.filter((id) => id !== podcastId));
-  
+
         // Remove the favorite podcast from the Supabase table
         await supabase
           .from('favorites')
@@ -65,8 +65,8 @@ export default function MediaControlCard() {
       } else {
         // If the podcast is not in favorites, add it
         setFavoritePodcastIds((prevIds) => [...prevIds, podcastId]);
-  
-        // Add the favorite h podcast to the Supabase table
+
+        // Add the favorite hhhh h podcast to the Supabase table
         await supabase
           .from('favorites')
           .insert([{ podcast_id: podcastId, podcast_name: podcastName }]);
