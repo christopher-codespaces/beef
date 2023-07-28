@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { supabase } from '../utils/supabaseClient';
+import { supabase } from '../pack/supabaseClient';
 import { Button, TextField, Typography, Container, Box } from '@mui/material';
 
 export default function Auth() {
