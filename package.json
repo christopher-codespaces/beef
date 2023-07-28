@@ -9,8 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.1",
+    "@mui/material": "^5.14.1",
+    "@supabase/auth-ui-react": "^0.4.2",
+    "@supabase/auth-ui-shared": "^0.1.6",
+    "@supabase/supabase-js": "^2.31.0",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.12",
+    "fuse.js": "^6.6.2",
+    "mui": "^0.0.1",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0"
